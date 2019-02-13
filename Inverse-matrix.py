@@ -5,8 +5,8 @@ import math
 
 def main():                                             # 掃き出し法による逆行列演算(きっと精度よい)
     n = int(input("Input size of matrix>>"))
-    Denom = np.array([1 for i in range(n)] for j in range(n))
-    Numer = np.array([0 for i in range(n)] for j in range(n))
+    Denom = np.array([[1 for i in range(n)] for j in range(n)])
+    Numer = np.array([[0 for i in range(n)] for j in range(n)])
     IdenD = np.array([[1 for i in range(n)] for j in range(n)])
     IdenN = np.array([[0 for i in range(n)] for j in range(n)])
 
@@ -15,8 +15,8 @@ def main():                                             # 掃き出し法によ�
     while (i < n):
         j = 0
         while (j < n):
-            Numer[i, j] = float(input("numerator("+str(i)+","+str(j)+")"))
-            Denom[i, j] = float(input("denominator("+str(i)+","+str(j)+")"))
+            Numer[i, j] = float(input("numerator("+str(i)+","+str(j)+"):"))
+            Denom[i, j] = float(input("denominator("+str(i)+","+str(j)+"):"))
             j += 1
         i += 1
 
