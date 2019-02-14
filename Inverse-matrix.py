@@ -16,7 +16,7 @@ def main():                                             # 掃き出し法によ�
         j = 0
         while (j < n):
             Numer[i, j] = float(input("numerator("+str(i)+","+str(j)+"):"))
-            Denom[i, j] = float(input("denominator("+str(i)+","+str(j)+"):"))
+            #Denom[i, j] = float(input("denominator("+str(i)+","+str(j)+"):"))
             j += 1
         i += 1
 
@@ -53,6 +53,10 @@ def main():                                             # 掃き出し法によ�
             j += 1
 
         i += 1
+    print("Numerator")
+    print(IdenN)
+    print("Denominator")
+    print(IdenD)
 
 
 def search_nonzero(i, n, Denom, Numer, IdenD, IdenN):   # (i,i)成分として0でない行を取得
